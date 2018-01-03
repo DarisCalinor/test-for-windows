@@ -1,0 +1,58 @@
+.jumbotron {
+	background-color: #000000;
+	color: #FAEEEA;
+	padding-top: 150px;
+	padding-bottom: 300px;
+	padding-right: 25px;
+	padding-left: 25px;
+	margin-bottom: 0;
+}
+
+.container-fluid {
+	padding: 60px 50px;
+}
+
+.content {
+	background-color: #DECFB8;
+}
+
+.bg-grey {
+	background-color: #1A1423;
+	color: #F9F7F3;
+}
+
+.btn-color {
+	background-color: #FAEEEA;
+	border-color: #CC4B1B;
+	color: #000;
+	border-width: 3px;
+}
+
+.btn-color:hover {
+	background-color: #940019;
+	border-color: #870017;
+	color: #000;
+	border-width: 3px;
+}
+
+.logo {
+	font-size: 200px;
+}
+
+.bg-dark {
+	background-color: #0C0A10;
+	color: #fff;
+	text-align: center;
+}
+
+#section-1 p {
+	font-size: 18px;
+}
+
+.test {
+	display: none;
+}
+
+.test-active {
+	display: inline;
+}

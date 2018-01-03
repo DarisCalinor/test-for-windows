@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./lib/Bootstrap-3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<script type="text/javascript" src="./lib/jQuery-3.2.1/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="./lib/Bootstrap-3.3.7/js/bootstrap.min.js" ></script>
+	<script src="./lib/bootpag/jquery.bootpag.js"></script>
+	<title>Guns, Ammo, Hunting, Tactical & Personal Defense | Rampart Firearm</title>
+</head>
+<body>
+
+	<!-- Start Navbar -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Brand</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-right" id="menu">
+				<ul class="nav navbar-nav">
+					<li><a href="./index.html">Home</a></li>
+					<li><a href="#section-2">Feature</a></li>
+					<li><a href="#section-3">About Us</a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</nav>
+
+	<!-- Start Home Section -->
+	<div id="section-1" class="jumbotron text-center">
+		<h1>Rampart Firearm</h1>
+		<br>
+		<div class="row">
+			<div class="row">
+				<div class="col-sm-4">
+					<p>Rampart Firearms is open and offering firearms, ammunition, holsters, cleaning, safety gear, tactical supplies and support.
+					Come on into our retail store nestled in a small town of Sedalia just minutes from Littleton / Castle Rock.</p>
+				</div>
+				<div class="col-sm-4">
+					<p>Our service and attention to you are what you would expect of a professional gun shop. Rampart Firearms caters to those requiring quality firearms for hunting, shooting, home and personal defense and tactical/target solutions.</p>
+				</div>
+				<div class="col-sm-4">
+					<p>We try to tailor our product line to meet the needs of our customers. If there is something you want, just let us know and we will be happy to help.</p>
+					<p>Trade or purchase of your firearm will always be considered.</p>
+				</div>
+			</div>
+			<br>
+			<div>
+				<a class="btn btn-default btn-lg btn-color" href="#">Go to Gunbroker</a>
+			</div>
+		</div>
+		
+	</div>
+
+	<!-- Start Pagination Section -->
+	<div id="section-2" class="container-fluid content">
+		<div class="row">
+			<div class="col-sm-8">
+				<h2>Other content will go here.</h2>
+			</div>
+			<div class="col-sm-4">
+				<span class="glyphicon glyphicon-signal logo"></span>
+			</div>
+		</div>				
+	</div>
+
+	<!-- About Us + Find Us -->
+	<div id="section-3" class="container-fluid bg-grey">
+		<div class="row">
+			<div class="col-sm-4">
+				<h2>About Us</h2>
+				<h2>Where the hell are we?</h2>
+			</div>
+			<div class="col-sm-8">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12326.048936451405!2d-104.962808!3d39.435153!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c9c3e28ce6d87%3A0x93ecd8908d04ab36!2s4064+Douglas+Ave%2C+Sedalia%2C+CO+80135!5e0!3m2!1str!2sus!4v1514983857584" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+
+	<!-- Start Footer -->
+	<div class="container-fluid bg-dark">
+		<p>Footer content goes here..</p>
+	</div>
+
+	<!-- BootPag Demo -->
+	
+
+
+	<div id="page" class="container-fluid">
+		<p class="1 test test-active">Dynamic Content goes here...</p>
+		<p class="2 test">Test 1</p>
+		<p class="3 test">Test 2</p>
+	</div>
+    
+    <div id="page-selection"></div>	
+	<div id="section-2" class="container-fluid">
+		<div id="page1" class="row page">
+			<div class="col-sm-12">
+				<p>At Rampart Firearms, we have a long-standing and close relationship with law enforcement. Many of our employees work closely with local, state, and national agencies. If you have a need for tactical gear, from firearms to a new item for your duty belt, come in and see us.</p>
+			</div>
+		</div>				
+	</div>
+
+
+	<script>
+        // init bootpag
+        $('#page-selection').bootpag({
+            total: 6,
+            page: 2,
+        });
+
+        //page click action
+        $("#page-selection").on("page", function(event, num){
+        	$(".test-active").removeClass(".test-active");
+        	$("." + num).addClass("test-active");
+        });
+    </script>
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,5 +1,7 @@
 .jumbotron {
 	background-color: #000000;
+	background-image: url(../img/fabian-kozdon-271993.jpg);
+	background-size: cover;
 	color: #FAEEEA;
 	padding-top: 150px;
 	padding-bottom: 300px;
@@ -9,11 +11,11 @@
 }
 
 .container-fluid {
-	padding: 60px 50px;
+	padding: 100px 50px;
 }
 
 .content {
-	background-color: #DECFB8;
+	background-color: #B39872;
 }
 
 .bg-grey {
@@ -35,10 +37,6 @@
 	border-width: 3px;
 }
 
-.logo {
-	font-size: 200px;
-}
-
 .bg-dark {
 	background-color: #0C0A10;
 	color: #fff;
@@ -47,4 +45,10 @@
 
 #section-1 p {
 	font-size: 18px;
+}
+
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+	color: #FAEEEA;
+	background-color: black;
 }

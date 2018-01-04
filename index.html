@@ -13,8 +13,8 @@
 <body>
 
 	<!-- Start Navbar -->
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
+	<nav class="navbar navbar-default">
+		<div class="container navbar-size">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
@@ -23,12 +23,12 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Brand</a>
+				<a class="navbar-brand" href="#"><div class="thumbnail"><img src="./img/rflogo.png"></div></a>
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse navbar-right" id="menu">
-				<ul class="nav navbar-nav">
+				<ul class="nav navbar-nav" id="ul-navbar-right">
 					<li><a href="./index.html">Home</a></li>
 					<li><a href="#section-2">Feature</a></li>
 					<li><a href="#section-3">About Us</a></li>
@@ -70,41 +70,43 @@
 			<br>
 			<div class="row">
 				<div class="col-sm-12">
-					<ul class="nav nav-tabs">
-						<li class="active"><a data-toggle="tab" href="#tactical">Tactical/LE</a></li>
-						<li><a data-toggle="tab" href="#hunting">Hunting</a></li>
-						<li><a data-toggle="tab" href="#p_defense">Personal Defense</a></li>
-						<li><a data-toggle="tab" href="#cowboy">Cowboy</a></li>
-						<li><a data-toggle="tab" href="#consignments">Consignments</a></li>
-						<li><a data-toggle="tab" href="#accessories">Accessories</a></li>
-					</ul>
-					<div class="tab-content">
-						<div id="tactical" class="tab-pane fade in active">
-							<h2>Tactical / Law Enforcement</h2>
-							<p>At Rampart Firearms, we have a long-standing and close relationship with law enforcement. Many of our employees work closely with local, state, and national agencies. If you have a need for tactical gear, from firearms to a new item for your duty belt, come in and see us.</p>
-						</div>
-						<div id="hunting" class="tab-pane fade">
-							<h2>Hunting</h2>
-							<p>Located in Douglas County at the foot of the Rockys, Rampart Firearms is a great stop for hunting needs in any season. Shotgun, rifle, or pistol; from squirrels to your next big game trip--we can have you ready for anything.</p>
-							<p>And if you don't see what you're looking for, let us know.</p>
-						</div>
-						<div id="p_defense" class="tab-pane fade">
-							<h2>Personale Defense</h2>
-							<p>At Rampart Firearms, we support your decision to take responsibility for your personal safety. If you're a first-time buyer, we can help you find the gun that's right for you. And if you're an old hand, we've got everything you need to make sure your home and family are protected.</p>
-						</div>
-						<div id="cowboy" class="tab-pane fade">
-							<h2>Cowboy</h2>
-							<p>Cowboy action shooting is one of the fastest growing shooting sports. Naturally, we have a great selection of pistols, rifles, and shotguns to help you in your next Wild West encounter.</p>
-							<p>And if you don't see what you're looking for, let us know. We can set you up with whatever you need.</p>
-						</div>
-						<div id="consignments" class="tab-pane fade">
-							<h2>Consignments</h2>
-							<p>Consignments will be taken on a 10% - 15% commission basis.</p>
-						</div>
-						<div id="accessories" class="tab-pane fade">
-							<h2>Accessories</h2>
-							<p>Rampart Firearms isn't just about guns. It's about everything you need to keep your guns and yourself in proper working order for shooting sports or ready for duty.</p>
-							<p>We have range gear, targets, cleaning supplies, holsters, cases, scopes, spare mags, and on and on. Stop in and see for yourself.</p>
+					<div class="tab">
+						<ul class="nav nav-tabs">
+							<li class="active"><a data-toggle="tab" href="#tactical">Tactical/LE</a></li>
+							<li><a data-toggle="tab" href="#hunting">Hunting</a></li>
+							<li><a data-toggle="tab" href="#p_defense">Personal Defense</a></li>
+							<li><a data-toggle="tab" href="#cowboy">Cowboy</a></li>
+							<li><a data-toggle="tab" href="#consignments">Consignments</a></li>
+							<li><a data-toggle="tab" href="#accessories">Accessories</a></li>
+						</ul>
+						<div class="tab-content">
+							<div id="tactical" class="tab-pane fade in active">
+								<h2>Tactical / Law Enforcement</h2>
+								<p>At Rampart Firearms, we have a long-standing and close relationship with law enforcement. Many of our employees work closely with local, state, and national agencies. If you have a need for tactical gear, from firearms to a new item for your duty belt, come in and see us.</p>
+							</div>
+							<div id="hunting" class="tab-pane fade">
+								<h2>Hunting</h2>
+								<p>Located in Douglas County at the foot of the Rockys, Rampart Firearms is a great stop for hunting needs in any season. Shotgun, rifle, or pistol; from squirrels to your next big game trip--we can have you ready for anything.</p>
+								<p>And if you don't see what you're looking for, let us know.</p>
+							</div>
+							<div id="p_defense" class="tab-pane fade">
+								<h2>Personale Defense</h2>
+								<p>At Rampart Firearms, we support your decision to take responsibility for your personal safety. If you're a first-time buyer, we can help you find the gun that's right for you. And if you're an old hand, we've got everything you need to make sure your home and family are protected.</p>
+							</div>
+							<div id="cowboy" class="tab-pane fade">
+								<h2>Cowboy</h2>
+								<p>Cowboy action shooting is one of the fastest growing shooting sports. Naturally, we have a great selection of pistols, rifles, and shotguns to help you in your next Wild West encounter.</p>
+								<p>And if you don't see what you're looking for, let us know. We can set you up with whatever you need.</p>
+							</div>
+							<div id="consignments" class="tab-pane fade">
+								<h2>Consignments</h2>
+								<p>Consignments will be taken on a 10% - 15% commission basis.</p>
+							</div>
+							<div id="accessories" class="tab-pane fade">
+								<h2>Accessories</h2>
+								<p>Rampart Firearms isn't just about guns. It's about everything you need to keep your guns and yourself in proper working order for shooting sports or ready for duty.</p>
+								<p>We have range gear, targets, cleaning supplies, holsters, cases, scopes, spare mags, and on and on. Stop in and see for yourself.</p>
+							</div>
 						</div>
 					</div>
 				</div>

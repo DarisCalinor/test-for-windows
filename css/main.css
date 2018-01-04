@@ -1,108 +1,73 @@
+/*==============================================
+Header Styles
+==============================================*/
 .navbar-default {
-	height: 135px;
-	background-color: #000;
-	border: 0;
-	border-radius: 0;
-	margin-bottom: 0;
+    height: 135px;
+    background-color: #000;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
 }
 
 .thumbnail {
-	padding: 3px;
-	background-color: #CC4B1B;
-	border-radius: 3px;
-	border-color: #2E2E2E;
+    padding: 3px;
+    background-color: #CC4B1B;
+    border-radius: 3px;
+    border-color: #2E2E2E;
 }
 
 #ul-navbar-right {
-	padding-top: 30px;
+    padding-top: 30px;
 }
 
+/*==============================================
+Home Styles
+==============================================*/
 .jumbotron {
-	background-color: #000000;
-	background-image: url(../img/fabian-kozdon-271993.jpg);
-	background-size: cover;
-	color: #FAEEEA;
-	padding-top: 80px;
-	padding-bottom: 300px;
-	padding-right: 25px;
-	padding-left: 25px;
-	margin-bottom: 0;
-}
-
-.container-fluid {
-	padding: 100px 50px;
-}
-
-.content {
-	background-color: #E4D7C3;
-}
-
-.bg-grey {
-	background-color: #1A1423;
-	color: #F9F7F3;
-}
-
-.btn-color {
-	background-color: #FAEEEA;
-	border-color: #CC4B1B;
-	color: #000;
-	border-width: 3px;
-}
-
-.btn-color:hover {
-	background-color: #940019;
-	border-color: #870017;
-	color: #000;
-	border-width: 3px;
-}
-
-.bg-dark {
-	background-color: #0C0A10;
-	color: #fff;
-	text-align: center;
+    background-color: #000000;
+    background-image: url(../img/thumb-1920-96814.jpg);
+    background-size: cover;
+    color: #FAEEEA;
+    padding-top: 80px;
+    padding-bottom: 300px;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-bottom: 0;
 }
 
 #section-1 p {
-	font-size: 18px;
-}
-/*
-.nav-tabs {
-	background-color:#E4D7C3; 
+    font-size: 18px;
 }
 
-.nav-tabs > li > a {
-	border-radius: 3px;
-	color: #000;
-}
- 
-.nav-tabs > li > a:hover {
-	background-color: #C9AF88!important;
-	border-radius: 3px;
-	color: #EEE7DB;
-	border:1px solid #CC4B1B;
-}
- 
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:focus,
-.nav-tabs > li.active > a:hover {
-	background-color: #A18967!important;
-	color: #F9F7F3;
-	border: 1px solid #CC4B1B;
-	border-bottom-right-radius: 0;
-	border-bottom-left-radius: 0;
-	border-bottom-color: transparent;
-}
-
-.tab-pane {
-    border: solid 1px #CC4B1B;
-    border-top: 0;
-    background-color:#A18967;
-    padding:5px;
+.btn-color {
+    background-color: #FAEEEA;
+    border-color: #CC4B1B;
     color: #000;
+    border-width: 3px;
 }
-*/
 
+.btn-color:hover {
+    background-color: #940019;
+    border-color: #870017;
+    color: #000;
+    border-width: 3px;
+}
 
+/*==============================================
+Products Styles
+==============================================*/
+.products {
+    background-image: url(../img/fabian-kozdon-271993.jpg);
+    background-color: #1A1423;
+    background-size: cover;
+    color: #F9F7F3;
+    padding: 100px 25px;
+}
+
+.product-sizing {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 
 a:hover,a:focus{
     outline: none;
@@ -174,3 +139,70 @@ a:hover,a:focus{
         text-align: center;
     }
 }
+
+/*==============================================
+Contact Styles
+==============================================*/
+.contact {
+    background-color: #E4D7C3;
+    color: #000;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/*==============================================
+Footer Styles
+==============================================*/
+.footer {
+    background-color: #0C0A10;
+    color: #fff;
+    text-align: center;
+}
+
+/*==============================================
+Notes
+==============================================*/
+
+/*Products Tab Customization*/
+
+/*
+.nav-tabs {
+	background-color:#E4D7C3; 
+}
+
+.nav-tabs > li > a {
+	border-radius: 3px;
+	color: #000;
+}
+ 
+.nav-tabs > li > a:hover {
+	background-color: #C9AF88!important;
+	border-radius: 3px;
+	color: #EEE7DB;
+	border:1px solid #CC4B1B;
+}
+ 
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+	background-color: #A18967!important;
+	color: #F9F7F3;
+	border: 1px solid #CC4B1B;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-color: transparent;
+}
+
+.tab-pane {
+    border: solid 1px #CC4B1B;
+    border-top: 0;
+    background-color:#A18967;
+    padding:5px;
+    color: #000;
+}
+*/
+
+/*Google API Key
+AIzaSyB9EvHvuu1GJhdW7CBMySOxnVbaAkWlp3o*/
+
+

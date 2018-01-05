@@ -1,4 +1,21 @@
 /*==============================================
+Background Styles
+==============================================*/
+.bg-img-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.bg-img-2 {
+    position: absolute;
+    top: 850px;
+    left: 0;
+    z-index: -1;
+}
+
+/*==============================================
 Header Styles
 ==============================================*/
 .navbar-default {
@@ -10,9 +27,9 @@ Header Styles
 }
 
 .thumbnail {
-    padding: 2.5px;
+    padding: 2px;
     background-color: #CC4B1B;
-    border-radius: 2.5px;
+    border-radius: 1px;
     border-color: #2E2E2E;
 }
 
@@ -36,7 +53,7 @@ Home Styles
 ==============================================*/
 .jumbotron {
     background-color: #000000;
-    background-image: url(../img/thumb-1920-96814.jpg);
+    /*background-image: url(../img/thumb-1920-96814.jpg);*/
     background-position: 0 0px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -63,22 +80,22 @@ Home Styles
     background-color: #FAEEEA;
     border-color: #CC4B1B;
     color: #000;
-    border-width: 3px;
+    border-width: 2px;
+    border-radius: 2px;
 }
 
 .btn-color:hover {
-    background-color: #940019;
-    border-color: #870017;
-    color: #000;
-    border-width: 3px;
+    background-color: #1A1423;
+    color: #FAEEEA;
+    border-color: #CC4B1B;
 }
 
 /*==============================================
 Products Styles
 ==============================================*/
 .products {
-    background-image: url(../img/fabian-kozdon-271993.jpg);
-    background-color: #1A1423;
+    /*background-image: url(../img/fabian-kozdon-271993.jpg);*/
+    /*background-color: #1A1423;*/
     background-size: cover;
     color: #F9F7F3;
     padding-top: 50px;

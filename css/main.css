@@ -3,8 +3,7 @@ Header Styles
 ==============================================*/
 .navbar-default {
     height: 135px;
-    background-color: rgba(0, 0, 0, 0);
-    background: rgba(0, 0, 0, 0);
+    background-color: #000;
     border: 0;
     border-radius: 0;
     margin-bottom: 0;
@@ -15,15 +14,6 @@ Header Styles
     background-color: #CC4B1B;
     border-radius: 2.5px;
     border-color: #2E2E2E;
-}
-
-.navbar-band {
-    position: relative;
-    top: 42px;
-    left: 159px;
-    width: 100%;
-    background-color: rgba(204, 75, 27, 0.6);
-    background: rgba(204, 75, 27, 0.6);
 }
 
 #menu {
@@ -47,7 +37,7 @@ Home Styles
 .jumbotron {
     background-color: #000000;
     background-image: url(../img/thumb-1920-96814.jpg);
-    background-position: 0 200px;
+    background-position: 0 0px;
     background-size: cover;
     background-repeat: no-repeat;
     color: #FAEEEA;
@@ -102,13 +92,18 @@ Products Styles
     text-transform: uppercase;
 }
 
+.tab {
+    background-color: #1A1423;
+}
+
 .tab-content-bg {
     background-color: #1A1423;
     background-repeat: no-repeat;
     padding: 50px;
     z-index: 5;
     border: 2px solid #CC4B1B;
-    border-radius: 0;
+    border-radius: 1px;
+    border-top: none;
     /*border-top-color: #1A1423;*/
     margin-right: 0;
     margin-left: 0;
@@ -124,7 +119,7 @@ Products Styles
     /*Tab - link*/
     .nav-tabs.nav-justified>li>a {
         border: none;
-        border-radius: 0;
+        border-bottom: 2px solid #CC4B1B;
         color: #fff;
         text-transform: uppercase;
     }
@@ -132,10 +127,8 @@ Products Styles
     .nav>li>a:focus,
     .nav>li>a:hover {
         background-color: #1A1423;
-        border: 2px solid #CC4B1B;
-        border-radius: 0;
-        border-bottom-color: #1A1423;
-        padding-bottom: 9px;
+        border: none;
+        border-radius: 1px;
     }
 
     /*Tab - active*/
@@ -143,9 +136,9 @@ Products Styles
     .nav-tabs.nav-justified>.active>a:focus,
     .nav-tabs.nav-justified>.active>a:hover {
         border: 2px solid #CC4B1B;
-        border-bottom-color: #1A1423;
+        border-bottom: none;
         border-radius: 0;
-        padding-bottom: 9px;
+        padding-bottom: 12px;
 
     }
 

@@ -1,29 +1,15 @@
-/*==============================================
-Background Styles
-==============================================*/
-.bg-img-1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-}
-
-.bg-img-2 {
-    position: absolute;
-    top: 850px;
-    left: 0;
-    z-index: -1;
-}
-
-/*==============================================
+/*============================================================================================
 Header Styles
-==============================================*/
+============================================================================================*/
 .navbar-default {
-    height: 135px;
-    background-color: #000;
+    background-color: transparent;
     border: 0;
     border-radius: 0;
     margin-bottom: 0;
+}
+
+.navbar-fixed-top {
+    position: absolute;
 }
 
 .thumbnail {
@@ -33,10 +19,21 @@ Header Styles
     border-color: #2E2E2E;
 }
 
+.navbar-band {
+    position: relative;
+    top: 46px;
+    left: 14%;
+    background-color: rgba(231, 198, 153, 0.4);
+    width: 86%;
+    max-height: 40px!important;
+    border: 2px solid #CC4B1B!important;
+    border-left-color: transparent!important;
+}
+
 #menu {
     font-size: 1.5em;
     position: relative;
-    top: -8px;
+    top: 0;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -48,17 +45,17 @@ Header Styles
     color: gray;
 }
 
-/*==============================================
+/*============================================================================================
 Home Styles
-==============================================*/
+============================================================================================*/
 .jumbotron {
     background-color: #000000;
-    /*background-image: url(../img/thumb-1920-96814.jpg);*/
+    background-image: url(../img/alexander-andrews-247178.jpg);
     background-position: 0 0px;
     background-size: cover;
     background-repeat: no-repeat;
     color: #FAEEEA;
-    padding-top: 200px;
+    padding-top: 120px;
     padding-bottom: 150px;
     padding-right: 25px;
     padding-left: 25px;
@@ -69,14 +66,36 @@ Home Styles
 .jumbo-content-bg {
     background-color: rgba(0, 0, 0, 0.6);
     background: rgba(0, 0, 0, 0.6);
-    padding: 10px 5px;
+    padding: 15px 5px;
+}
+
+#section-1 h3 {
+    margin-bottom: 0;
 }
 
 #section-1 p {
     font-size: 18px;
+    margin-bottom: 0;
+}
+
+#btn-position {
+    margin-top: 42px;
+    margin-bottom: -42px;
+}
+
+.btn-lg {
+    padding: 20px 80px;
+    font-size: 20px;
 }
 
 .btn-color {
+    background-color: #1A1423;
+    color: #FAEEEA;
+    border-color: #CC4B1B;
+}
+
+.btn-color:hover,
+.btn-color:focus, {
     background-color: #FAEEEA;
     border-color: #CC4B1B;
     color: #000;
@@ -84,38 +103,36 @@ Home Styles
     border-radius: 2px;
 }
 
-.btn-color:hover {
-    background-color: #1A1423;
-    color: #FAEEEA;
-    border-color: #CC4B1B;
-}
-
-/*==============================================
+/*============================================================================================
 Products Styles
-==============================================*/
+============================================================================================*/
 .products {
-    /*background-image: url(../img/fabian-kozdon-271993.jpg);*/
-    /*background-color: #1A1423;*/
-    background-size: cover;
+    background-color: #1A1423;
     color: #F9F7F3;
     padding-top: 50px;
-    padding-bottom: 400px;
+    padding-bottom: 130px;
     z-index: 1;
 }
 
-#products-h1 {
+.section-h1 {
     text-align: center;
     font-size: 3.0em;
     text-transform: uppercase;
 }
 
+.section-hr {
+    margin: 10px auto;
+    width: 50%;
+}
+
 .tab {
     background-color: #1A1423;
+    max-height: 480px;
+    min-height: 480px;
 }
 
 .tab-content-bg {
     background-color: #1A1423;
-    background-repeat: no-repeat;
     padding: 50px;
     z-index: 5;
     border: 2px solid #CC4B1B;
@@ -168,29 +185,114 @@ Products Styles
         text-transform: uppercase;                
     }
 
-    
+/*============================================================================================
+Auction Styles
+============================================================================================*/
+.auction {
+    background-color: #C2C0C4;
+    padding-top: 50px;
+}
 
+.highlighter {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 2px solid #CC4B1B;
+    background-color: #fff;
+    transition: all 0.5s;
+    padding: 15px;
+    color: #000;
+}
 
-/*==============================================
+.listing-image {
+    width: 100%;
+}
+
+.listing-image img {
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.listing-text a {
+    font-size: 16px;
+    color: #000;
+}
+
+.listing-text a:hover,
+.listing-text a:focus {
+    font-size: 16px;
+    color: #949299;
+    text-decoration: none; 
+}
+
+.listing-text h4 {
+    margin: 0 0;
+}
+
+.listing-figures h5 {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.listing-figures a {
+    font-size: 18px;
+}
+
+.time-left {
+    font-size: 13px;
+}
+
+.variable-data {
+    margin-top: 10px;
+}
+
+.auction .container h1 {
+    text-align: center;
+    margin-top: 31px;
+}
+
+.auction .container .row {
+    margin-bottom: 80px;
+}
+
+/*============================================================================================
 Contact Styles
-==============================================*/
+============================================================================================*/
 .contact {
     background-color: #E4D7C3;
     color: #000;
 }
 
-/*==============================================
+.contact-content {
+    padding: 80px 0;
+}
+
+.col-sm-6 .glyphicon {
+    padding-right: 10px;
+}
+
+.thumbnail-contact {
+    padding: 2px;
+    background-color: #000;
+    border-radius: 1px;
+    border-color: #2E2E2E;
+}
+
+/*============================================================================================
 Footer Styles
-==============================================*/
+============================================================================================*/
 .footer {
     background-color: #0C0A10;
     color: #fff;
     text-align: center;
 }
 
-/*==============================================
+/*============================================================================================
 Notes
-==============================================*/
+============================================================================================*/
 
 /*Google API Key
 AIzaSyB9EvHvuu1GJhdW7CBMySOxnVbaAkWlp3o*/

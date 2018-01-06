@@ -1,4 +1,46 @@
 /*============================================================================================
+Fonts
+============================================================================================*/
+
+@font-face {
+font-family: Assassin;
+src: url(../fonts/assassin/Assassin$.ttf);
+}
+
+@font-face{
+font-family: LinLibertine_R;
+src: url(../fonts/linux_libertine/LinLibertine_R.ttf)    
+}
+
+@font-face{
+font-family: Roboto-Italic;
+src: url(../fonts/roboto/Roboto-Italic.ttf)    
+}
+
+@font-face{
+font-family: Roboto-Thin;
+src: url(../fonts/roboto/Roboto-Thin.ttf)    
+}
+
+@font-face{
+font-family: CaviarDreams;
+src: url(../fonts/caviar_dreams/CaviarDreams.ttf)
+}
+
+@font-face{
+font-family: Roboto-Regular;
+src: url(../fonts/roboto/Roboto-Regular.ttf)    
+}
+
+
+* {
+    /*font-family: Assassin;*/
+    /*font-family: LinLibertine_R;*/
+    font-family: Roboto-Regular;
+    /*font-family: CaviarDreams;*/
+}
+
+/*============================================================================================
 Header Styles
 ============================================================================================*/
 .navbar-default {
@@ -37,11 +79,13 @@ Header Styles
 }
 
 .navbar-default .navbar-nav>li>a {
+    font-family: Roboto-Italic;
     color: #fff;
 }
 
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover {
+    font-family: Roboto-Italic;
     color: gray;
 }
 
@@ -49,11 +93,7 @@ Header Styles
 Home Styles
 ============================================================================================*/
 .jumbotron {
-    background-color: #000000;
-    background-image: url(../img/alexander-andrews-247178.jpg);
-    background-position: 0 0px;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: transparent;
     color: #FAEEEA;
     padding-top: 120px;
     padding-bottom: 150px;
@@ -70,10 +110,13 @@ Home Styles
 }
 
 #section-1 h3 {
+    font-family: Roboto-Italic;
+    font-size: 22px;
     margin-bottom: 0;
 }
 
 #section-1 p {
+    font-family: Roboto-Thin;
     font-size: 18px;
     margin-bottom: 0;
 }
@@ -103,14 +146,18 @@ Home Styles
     border-radius: 2px;
 }
 
+.btn {
+    font-family: Roboto-Italic;
+}
+
 /*============================================================================================
 Products Styles
 ============================================================================================*/
 .products {
-    background-color: #1A1423;
+    background-color: transparent;
     color: #F9F7F3;
-    padding-top: 50px;
-    padding-bottom: 130px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     z-index: 1;
 }
 
@@ -122,13 +169,14 @@ Products Styles
 
 .section-hr {
     margin: 10px auto;
-    width: 50%;
+}
+
+.product-hr {
+    width: 26%;
 }
 
 .tab {
     background-color: #1A1423;
-    max-height: 480px;
-    min-height: 480px;
 }
 
 .tab-content-bg {
@@ -141,10 +189,16 @@ Products Styles
     /*border-top-color: #1A1423;*/
     margin-right: 0;
     margin-left: 0;
+    height: 480px!important;
 }
 
 .tab-content-bg > .col-sm-6 > p {
     text-align: left;
+}
+
+.col-sm-6 .products-img {
+    margin: 0 auto;
+    max-width: 500px!important;
 }
 
     /*------------------------------------------
@@ -156,6 +210,7 @@ Products Styles
         border-bottom: 2px solid #CC4B1B;
         color: #fff;
         text-transform: uppercase;
+        font-family: Roboto-Italic;
     }
 
     .nav>li>a:focus,
@@ -163,6 +218,7 @@ Products Styles
         background-color: #1A1423;
         border: none;
         border-radius: 1px;
+        font-family: Roboto-Italic;
     }
 
     /*Tab - active*/
@@ -173,7 +229,7 @@ Products Styles
         border-bottom: none;
         border-radius: 0;
         padding-bottom: 12px;
-
+        font-family: Roboto-Italic;
     }
 
     .nav-tabs>li.active>a,
@@ -182,15 +238,29 @@ Products Styles
         cursor: default;
         background-color: #1A1423;
         color: #F9F7F3;
-        text-transform: uppercase;                
+        text-transform: uppercase;
+        font-family: Roboto-Italic;                
+    }
+
+    .nav-tabs {
+
     }
 
 /*============================================================================================
 Auction Styles
 ============================================================================================*/
 .auction {
-    background-color: #C2C0C4;
-    padding-top: 50px;
+    background-color: transparent;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.auction-h1 {
+    color: grey;
+}
+
+.auction-hr {
+    width: 51%;
 }
 
 .highlighter {
@@ -255,19 +325,23 @@ Auction Styles
 }
 
 .auction .container .row {
-    margin-bottom: 80px;
+    /*margin-bottom: 80px;*/
 }
 
 /*============================================================================================
 Contact Styles
 ============================================================================================*/
 .contact {
-    background-color: #E4D7C3;
+    background-color: transparent;
     color: #000;
 }
 
+.contact-hr {
+    width: 26%;
+}
+
 .contact-content {
-    padding: 80px 0;
+    padding: 20px 0;
 }
 
 .col-sm-6 .glyphicon {
@@ -281,6 +355,10 @@ Contact Styles
     border-color: #2E2E2E;
 }
 
+#find-us {
+    font-family: LinLibertine_R;
+}
+
 /*============================================================================================
 Footer Styles
 ============================================================================================*/
@@ -291,10 +369,22 @@ Footer Styles
 }
 
 /*============================================================================================
+Last Changes
+============================================================================================*/
+body {
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-family: LinLibertine_R;
+}
+
+/*============================================================================================
 Notes
 ============================================================================================*/
 
 /*Google API Key
 AIzaSyB9EvHvuu1GJhdW7CBMySOxnVbaAkWlp3o*/
-
 
